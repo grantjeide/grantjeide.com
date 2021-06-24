@@ -7,15 +7,12 @@
 
 @font-face {
   font-family: forzaFont;
-  src: url(font/Forza.ttf);
+  src: url(font/Cortado\ Script\ Web\ Regular.ttf);
 }
-@font-face {
-  font-family: madeTommy;
-  src: url(font/MADE.otf);
-}
+
 html {
   font-family: 'forzaFont';
-  font-size: 16px;
+  font-size: 5vw;
   font-smooth: auto;
   font-weight: 300;
   line-height: 1.5;
@@ -23,27 +20,29 @@ html {
 }
 
 body {
-  position: relative;
+  height: 100vh;
+  background-color: #c18e60;
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 100%;
-  height: 100vh;
-  background-color: #c18e60;
+  flex-direction: column;
 }
 .title {
-  font-size: 50px;
-  position: relative;
-  padding-bottom: 20%;
-  margin-bottom: 5%;
+  font-size: 100%;
 }
+
 .buttons {
-  position: relative;
 }
 .buttons img {
-  width: 50px;
-  height: 50px;
+  width: 2em;
+}
+ul > li {
+  list-style-type: none;
+  display: inline-block;
 }
 ul {
-  list-style-type: none;
+  display: table;
+  margin: 0 auto;
+  text-align: left;
+  padding-left: 0;
 }
